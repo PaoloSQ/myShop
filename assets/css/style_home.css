@@ -1,0 +1,130 @@
+/*-------------------------------------- MAIN STYLE --------------------------------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.p_descuento{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-block: 0.3%;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+
+
+.marcas-container-padre{
+    overflow: hidden;
+    align-self: center;
+    width: 60%;
+}
+.marcas-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 150%;
+    gap: 150px;
+}
+.marca{
+    width: 300px;
+}
+
+
+
+h2{
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    padding-block: 4% 2%;
+}
+
+
+
+
+.novedades-container{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto; 
+    gap: 25px;
+}
+.articulo-novedad, .articulo-categoria{
+    width: 30%;
+    filter: grayscale(100%);
+    transition: 0.2s;
+}
+.articulo-novedad p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.articulo-novedad:last-child{
+    align-self: start;
+}
+.articulo-novedad:hover, .articulo-categoria:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+.articulo-novedad img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.categorias-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+}
+.categorias-container p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.articulo-categoria img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:850px) {
+    .marcas-container-padre{
+        width: 80%;
+    }
+    .articulo-novedad{
+        width: 45%;
+    }
+    .categorias-container{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .marca{
+        width: 200px;
+    }    
+    .articulo-novedad, .articulo-categoria{
+        width: 82%;
+    }
+    .categorias-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+}

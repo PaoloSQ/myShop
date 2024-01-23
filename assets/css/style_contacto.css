@@ -1,0 +1,171 @@
+main{
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    margin-block: 1% 3.5%;
+    font-size: 1.8em;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#formulario-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+    width: 50%;
+    gap: 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    font-size: 1em;
+    gap: 7px;
+    position: relative;
+}
+.input-container label{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.input-container input, textarea{
+    padding: 1% 1.5%;  
+    font-size: 1em; 
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+#enviar_correo-boton{
+    width: 30%;
+    margin-block-start: 2%;
+    padding: 2% 4%;
+    color: white;
+    background-color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.1s;
+    border-radius: 10px;
+    text-wrap: nowrap;
+    text-align: center;
+    border: 2px solid black;
+}
+#enviar_correo-boton:hover{
+    background-color: rgb(82, 82, 82);
+    cursor: pointer;
+}
+#enviar_correo-boton:active{
+    background-color: white;
+    color: black
+}
+.P-error{
+    color: red;
+    font-size: 1em !important;
+    font-weight: lighter !important;
+    font-style: italic;
+    position: absolute;
+    top: 4.7rem;
+    right: 0;
+}
+
+
+.redes_sociales-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.redes_sociales-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-block: 3.5% 2%;
+}
+.red_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    gap: 10px;
+    transition: 0.1s;
+    text-wrap: nowrap;
+}
+.red_social:hover{
+    transform: scale(1.1);
+    color: rgb(119, 119, 119);
+}
+.red_social p{
+    font-size: 1.1em;
+}
+.red_social i{
+    font-size: 40px;
+}
+
+@media screen and (max-width:1050px) {
+    #formulario-email{
+        width: 70%;
+    }
+    #enviar_correo-boton{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px) {
+    #formulario-email{
+        width: 80%;
+    }
+    .redes_sociales-container{
+        gap: 20px;
+    }
+    .red_social p{
+        font-size: 1em;
+    }
+    .red_social i{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    h2{
+        font-size: 1.6em;
+        margin-block: 5%;
+    }
+    #formulario-email{
+        width: 90%;
+        padding: 6%;
+    }
+    .redes_sociales-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-block: 8%;
+    }
+    .red_social p{
+        font-size: 1em;
+    }
+    .red_social i{
+        font-size: 35px;
+    }
+    .input-container input, textarea{
+        padding: 1% 1.5%;  
+        font-size: 1em; 
+        width: 95%;
+    }
+    #enviar_correo-boton{
+        width: 70%;
+    }
+}

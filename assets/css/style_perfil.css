@@ -1,0 +1,315 @@
+main {
+    margin: 2%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-block: 2%;
+}
+
+#datos-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 20px;
+    align-items: start;
+    justify-content: start;
+    justify-self: center;
+    padding: 2% 15%;
+    width: 70%;
+}
+
+#datos-section p{
+    padding: 1% 0;
+    text-wrap: nowrap;
+}
+#datos-section span{
+    font-size: 1.2em;
+}
+
+#datos-section p:nth-of-type(1) {
+    grid-column: 1/2;
+}
+
+#datos-section p:nth-of-type(2) {
+    grid-column: 2/4;
+}
+
+#datos-section p:nth-of-type(3) {
+    grid-column: 4/6;
+}
+
+#datos-section p:nth-of-type(4) {
+    grid-column: 1/3;
+}
+
+#datos-section p:nth-of-type(5) {
+    grid-column: 4/6;
+}
+
+#datos-section p:nth-of-type(6) {
+    grid-column: 1/3;
+}
+
+#datos-section p:nth-of-type(7) {
+    grid-column: 3/4;
+}
+
+#datos-section p:nth-of-type(8) {
+    grid-column: 4/5;
+}
+
+#datos-section p:nth-of-type(9) {
+    grid-column: 5/6;
+}
+
+#datos-section p:nth-of-type(10) {
+    grid-column: 4/5;
+}
+#datos-section p:nth-of-type(11) {
+    grid-column: 5/6;
+}
+
+#cambiar_contrasena{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+#eliminar_cuenta{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: red;
+    cursor: pointer;
+}
+.editar_perfil-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+}
+.editar_perfil-container p{
+    color: rgb(158, 158, 158);
+}
+
+#pedidos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pedidos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    padding-block: 3%;
+}
+
+.pedido {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+.pedido table{
+    width: 98%;
+    text-align: center;
+}
+
+.detalles-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+    background-color: rgb(197, 197, 197);
+    font-weight: bold;
+    width: 96%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.detalles-pedido p {
+    font-size: 1.1em;
+}
+
+.encabezado-pedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+    width: 97%;
+    font-weight: bold;
+}
+
+.encabezado-pedido p {
+    font-size: 1.1em;
+    flex: 1;
+    text-align: center;
+}
+
+td img {
+    width: 100px;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    gap: 5px;
+    align-items: end;
+    justify-content: end;
+    padding: 1% 2%;
+}
+
+.total-container p {
+    font-size: 1.1em;
+}
+
+.total-container p:first-of-type {
+    font-weight: bold;
+}
+
+
+.formulario-sweetAlert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#formulario-cambiar-contrasena{
+    text-wrap: nowrap;
+}
+.swal2-modal{
+    width: 40%;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    padding-inline: 5%;
+    position: relative;
+}
+.P-error{
+    color: red;
+    font-size: 1em !important;
+    font-weight: lighter !important;
+    font-style: italic;
+    position: absolute;
+    top: 2.3rem;
+    right: 30px;
+}
+.input-container input{
+    width: 70%;
+    padding: 1% 1.5%;
+}
+.input-container select{
+    width: 74%;
+    padding: 1% 1.5%;
+}
+
+div:where(.swal2-container) div:where(.swal2-actions) {
+    margin: 0 0 0 0;
+}
+div:where(.swal2-container) .swal2-html-container {
+    padding: 0 0 4% 0;
+}
+
+
+@media screen and (max-width:1150px) {
+    #datos-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #datos-section p:nth-of-type(1) {
+        grid-column: 1/3;
+    }
+    
+    #datos-section p:nth-of-type(2) {
+        grid-column: 1/2;
+    }
+    
+    #datos-section p:nth-of-type(3) {
+        grid-column: 2/3;
+    }
+    
+    #datos-section p:nth-of-type(4) {
+        grid-column: 1/2;
+    }
+    
+    #datos-section p:nth-of-type(5) {
+        grid-column: 1/3;
+    }
+    
+    #datos-section p:nth-of-type(6) {
+        grid-column: 1/3;
+    }
+    
+    #datos-section p:nth-of-type(7) {
+        grid-column: 1/2;
+    }
+    
+    #datos-section p:nth-of-type(8) {
+        grid-column: 2/3;
+    }
+    
+    #datos-section p:nth-of-type(9) {
+        grid-column: 1/2;
+    }
+    
+    #datos-section p:nth-of-type(10) {
+        grid-column: 1/2;
+        padding-block: 5%;
+    }
+    #datos-section p:nth-of-type(11) {
+        padding-block: 5%;
+        grid-column: 2/3;
+    }
+    .pedido {
+        width: 90%;
+    }
+}
+@media screen and (max-width:750px) {
+    #datos-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 2% 7%;
+        width: 80%;
+    }
+    #datos-section p{
+        text-wrap: wrap;
+    }
+    #datos-section p:nth-of-type(10) {
+        padding-block: 0;
+        align-self: flex-end;
+    }
+    #datos-section p:nth-of-type(11) {
+        padding-block: 0;
+        align-self: flex-end;
+    }
+    #editar_perfil{
+        margin-right: 10%;
+    }
+    .pedido{
+        width: 100%;
+    }
+    td img {
+        width: 70px;
+    }
+}
